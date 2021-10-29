@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html lang="en-IN">
+
+<head>
+
+	<!-- CSS -->
+	<style>
+	#div1, #div2 {
+	  float: center;
+	  width: 100px;
+	  height: 35px;
+	  margin: 10px;
+	  padding: 10px;
+	  border: 1px solid black;
+	}
+	</style>
+
+	<!-- The Following code is meta data for information -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta charset="UTF-8">
+	  <meta name="HTML,Javascript,CSS" content="Free Web tutorials">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="Hardik Chudasama">
+
+	<!-- The title of this page is following -->
+	<title>Drag and Drop in HTML</title>
+
+	<script>
+		function allowDrop(ev) {
+		  ev.preventDefault();
+		}
+
+		function drag(ev) {
+		  ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+		  ev.preventDefault();
+		  var data = ev.dataTransfer.getData("text");
+		  ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+
+</head>
+
+<body>
+<h2>Drag and Drop</h2><hr>
+<p>Drag the image back and forth between the two div elements.</p>
+
+	<div align="center" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	  <img src="https://www.w3schools.com/html/img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+	</div>
+
+	<div align="center" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+</html>

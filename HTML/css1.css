@@ -1,0 +1,26 @@
+body {
+  background-color: lightcoral;
+}
+hr1 {
+  color: blueviolet;
+  font-family: courier;
+  font-size: 50px;
+  border: 2px solid yellow;
+}
+
+hr2 {
+  color: blueviolet;
+  font-family: courier;
+  font-size: 60px;
+  border: 5px solid white;
+}
+
+table, th, td {
+  text-align: center;
+  color: white;
+  border:5px solid white;
+  /*border-collapse: collapse;*/
+  background-color: red;
+  border-radius: 5px;
+  /*border-style: dotted;*/
+}

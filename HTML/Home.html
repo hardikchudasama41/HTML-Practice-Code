@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<!-- The Following code is meta data for information -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="HTML,Javascript,CSS" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Hardik Chudasama">
+
+<!-- The title of this page is following -->
+<title>HTML Practice</title>
+
+<!-- The following code is for Internal CSS Example -->
+<style>
+	body {background-color: powderblue;}
+	h1   {color: lightgreen;}
+	p    {color: lightgreen;}
+</style>
+
+<style>
+body {
+  background-image: url('Profile_picture.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%100%;
+}
+</style>
+
+<!-- The following code is for External CSS Example -->
+<link rel="stylesheet" href="css1.css">
+
+<!-- The following code is for browser tab icon -->
+<link rel="icon" href ="favicon.ico"/>
+
+</head>
+<body>
+<div align="center">
+	<h1>Hello Everyone! This Is My Practice HTML Page</h1>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click Here, To Know Current Time&#9203;</button>
+	<p id="demo"></p>
+</div>
+
+<hr>
+
+<div align="center">
+	<h1 style="font-size:100px;" id="C4">😎<mark><del><span style="border: 10px solid white">Hello World!</span></del></mark>😎</h1>
+	<p style="font-size:100px;">&#128513;&#128516;&#128517;&#128514;</p><hr>
+	<h2 style="background-color:lightgoldenrodyellow;"><p style="border:10px solid red; font-size:50px">Hardik Chudasama</p></h2>
+</div>
+
+<div align="center">
+	<p style="background-color:red;" align="center">The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+
+	<!-- This is link of another html page -->
+	<h1>Hardik Chudasama
+	<b><a href="https://www.facebook.com/profile.php?id=100071117942013" target="_blank">Visit My Facebook Page</a></b><br><br></h1>
+
+	<!-- This is an image tag of html -->
+	<!-- style="width:100%; This code is for responsive image -->
+	<img src="Profile_picture.jpg" alt="Profile picture" width="250" height="200" border="2">
+
+		<!-- This is an example of canvas -->
+		<h1>This is an example of canvas</h1>
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML canvas tag.</canvas>
+
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			// Create gradient
+			var grd = ctx.createLinearGradient(0,0,200,0);
+			grd.addColorStop(0,"blue");
+			grd.addColorStop(1,"white");
+			// Fill with gradient
+			ctx.fillStyle = grd;
+			ctx.fillRect(25,10,150,80);
+			ctx.strokeText("Hello World",68,55);
+		</script>
+
+</div>
+
+<div align="center">
+	<h1>This is an example of Internal CSS</h1>
+	<hr1>This is an example of External CSS</hr1><hr>
+
+		<button onclick="document.location='mailto:hardikchudasama499@gmail.com'" title="Click this button to send e-mail">Click Here, Send email to Hardik Chudasama</button><br>
+
+		<!--HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.-->
+		<button><a href="#C4">Jump to Hello World!</a></button>
+</div>
+<hr>
+<div align="center">
+	<h2 style="color:blue;">A basic HTML table</h2>
+
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>
+	    <th>Contact</th>
+	    <th>City</th>
+	  </tr>
+	  <tr>
+	    <td>Hardik Chudasama</td>
+	    <td>9913462591</td>
+	    <td>Devbhumi Dwarka</td>
+	  </tr>
+	  <tr>
+	    <td>Arjun Chudasama</td>
+	    <td>8780814502</td>
+	    <td>Jamnagar</td>
+	  </tr>
+	</table>
+
+	<p>To undestand the example better, I have added borders to the table.</p>
+</div>
+
+
+<hr>
+<h1 align="center"><a href="htmldraganddrop.html" target="_blank">Click Here, to see example of Drag & Drop</a></h1>
+<hr>
+<p align="center" style="font-size:50px">The following is framesets of different four pages</p>
+
+	<iframe src="jsexample.html" name="iframe_a" height="500px" width="900px" title="Iframe Example 1"></iframe>
+	<iframe src="htmlaudio.html" name="iframe_b" height="500px" width="900px" title="Iframe Example 2"></iframe><br>
+	<iframe src="htmlvideo.html" name="iframe_c" height="500px" width="900px" title="Iframe Example 3"></iframe>
+	<iframe src="htmlytvideo.html" name="iframe_d" height="500px" width="900px" title="Iframe Example 4"></iframe>
+
+</body>
+</html>

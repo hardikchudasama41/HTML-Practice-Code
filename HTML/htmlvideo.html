@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html lang="en-IN">
+
+<head>
+	<!-- The Following code is meta data for information -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta charset="UTF-8">
+	  <meta name="HTML,Javascript,CSS" content="Free Web tutorials">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="Hardik Chudasama">
+
+	<!-- The title of this page is following -->
+	<title>HTML Video</title>
+</head>
+
+<body>
+
+<div align="center"><br><br>
+	<h1 style="color: blue;">HTML Video</h1>
+
+	<video id="video" width="400" controls>
+		<source src="video.mp4" type="video/mp4">
+		Your browser does not support HTML video.
+	</video><br><br>
+
+	<button onclick="playPause()">Play/Pause</button> 
+	<button onclick="makeBig()">Big</button>
+	<button onclick="makeSmall()">Small</button>
+	<button onclick="makeNormal()">Normal</button>
+
+	<script> 
+		var myVideo = document.getElementById("video"); 
+
+		function playPause() {
+		  if (myVideo.paused) 
+		    myVideo.play();
+		  else
+		    myVideo.pause();
+		}
+
+		function makeBig() {
+		    myVideo.width = 560; 
+		}
+
+		function makeSmall() {
+		    myVideo.width = 320;
+		}
+
+		function makeNormal() {
+		    myVideo.width = 420; 
+		}
+	</script>
+</div>
+
+</body>
+</html>
